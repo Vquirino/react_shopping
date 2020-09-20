@@ -3,7 +3,7 @@ import { Wrapper } from './AppHeader.styles'
 
 function AppHeader () {
     return <Wrapper>
-        alga
+        Quirino
         <span>Shopping</span>
     </Wrapper>
 }
