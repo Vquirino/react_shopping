@@ -6,6 +6,7 @@ import ShoppingList from '../ShoppingList';
 import { Container, Wrapper } from './App.styles'
 import productsMock from '../../mocks/products.json'
 import extractPercentage from '../../utils/extractPercentage'
+import Calculator from '../Calculator';
 
 function App () {
     const colors = ['#62CBC6', '#00ABAD', '#00858C', '#006073', '#004D61']
@@ -58,7 +59,7 @@ function App () {
                     estatisticas
 
                     <LineChart 
-                        color = {colors [0]}
+                        color = { colors[0] }
                         title = "saudavel"
                         percentage = {extractPercentage(
                             selectedProducts.length,
@@ -68,7 +69,7 @@ function App () {
                         )}
                     />
                     <LineChart 
-                        color = {colors [1]}
+                        color = { colors[1] }
                         title = "nao tao saudavel"
                         percentage = {extractPercentage(
                             selectedProducts.length,
@@ -78,7 +79,7 @@ function App () {
                         )}
                     />
                     <LineChart 
-                        color = {colors [2]}
+                        color = { colors[2] }
                         title = "limpeza"
                         percentage = {extractPercentage(
                             selectedProducts.length,
@@ -88,7 +89,7 @@ function App () {
                         )}
                     />
                     <LineChart 
-                        color = {colors [3]}
+                        color = { colors[3] }
                         title = "outros"
                         percentage = {extractPercentage(
                             selectedProducts.length,
@@ -109,6 +110,9 @@ function App () {
                                 currency: 'BRL'
                             })}
                         </div>
+
+                        <Calculator />
+
                     </div>
 
 
